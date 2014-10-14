@@ -33,6 +33,7 @@
 		437A364319ED803700AEB4AB /* SNCappedQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNCappedQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		437A364619ED803700AEB4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		437A364F19ED8BE800AEB4AB /* SNCappedQueueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNCappedQueueTest.m; sourceTree = "<group>"; };
+		688BD126D919D5CB746733E1 /* SNCappedQueue.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = SNCappedQueue.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 				437A363A19ED803700AEB4AB /* SNCappedQueue */,
 				437A364419ED803700AEB4AB /* SNCappedQueueTests */,
 				437A363919ED803700AEB4AB /* Products */,
+				688BD126D919D5CB746733E1 /* SNCappedQueue.podspec */,
 			);
 			sourceTree = "<group>";
 		};
