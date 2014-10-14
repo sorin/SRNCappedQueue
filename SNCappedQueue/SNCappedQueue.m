@@ -8,10 +8,10 @@
 
 @implementation SNCappedQueue {
     NSMutableArray *queue;
-    int size;
+    NSInteger size;
 }
 
-- (instancetype)initWithSize:(int)aSize {
+- (instancetype)initWithSize:(NSInteger)aSize {
     NSParameterAssert( aSize > 0 );
     self = [super init];
     if (self) {
@@ -40,7 +40,7 @@
     return returnObject;
 }
 
-- (int)count {
+- (NSInteger)count {
     return [queue count];
 }
 

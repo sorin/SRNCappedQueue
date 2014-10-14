@@ -8,12 +8,12 @@
 
 @interface SNCappedQueue : NSObject
 
-- (instancetype)initWithSize:(int)aSize;
+- (instancetype)initWithSize:(NSInteger)aSize;
 
 - (id)dequeue;
 
 - (void)enqueue:(id)obj;
 
-- (int)count;
+- (NSInteger)count;
 
 @end
