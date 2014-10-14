@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		437A363C19ED803700AEB4AB /* SNCappedQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 437A363B19ED803700AEB4AB /* SNCappedQueue.h */; };
+		437A363E19ED803700AEB4AB /* SNCappedQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 437A363D19ED803700AEB4AB /* SNCappedQueue.m */; };
+		437A365019ED8BE800AEB4AB /* SNCappedQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 437A364F19ED8BE800AEB4AB /* SNCappedQueueTest.m */; };
+		437A365119ED949800AEB4AB /* SNCappedQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 437A363D19ED803700AEB4AB /* SNCappedQueue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		437A363619ED803700AEB4AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				437A363C19ED803700AEB4AB /* SNCappedQueue.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		437A363819ED803700AEB4AB /* libSNCappedQueue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSNCappedQueue.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		437A363B19ED803700AEB4AB /* SNCappedQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNCappedQueue.h; sourceTree = "<group>"; };
+		437A363D19ED803700AEB4AB /* SNCappedQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNCappedQueue.m; sourceTree = "<group>"; };
+		437A364319ED803700AEB4AB /* SNCappedQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNCappedQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		437A364619ED803700AEB4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437A364F19ED8BE800AEB4AB /* SNCappedQueueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNCappedQueueTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		437A363519ED803700AEB4AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437A364019ED803700AEB4AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		437A362F19ED803700AEB4AB = {
+			isa = PBXGroup;
+			children = (
+				437A363A19ED803700AEB4AB /* SNCappedQueue */,
+				437A364419ED803700AEB4AB /* SNCappedQueueTests */,
+				437A363919ED803700AEB4AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		437A363919ED803700AEB4AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				437A363819ED803700AEB4AB /* libSNCappedQueue.a */,
+				437A364319ED803700AEB4AB /* SNCappedQueueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		437A363A19ED803700AEB4AB /* SNCappedQueue */ = {
+			isa = PBXGroup;
+			children = (
+				437A363B19ED803700AEB4AB /* SNCappedQueue.h */,
+				437A363D19ED803700AEB4AB /* SNCappedQueue.m */,
+			);
+			path = SNCappedQueue;
+			sourceTree = "<group>";
+		};
+		437A364419ED803700AEB4AB /* SNCappedQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				437A364519ED803700AEB4AB /* Supporting Files */,
+				437A364F19ED8BE800AEB4AB /* SNCappedQueueTest.m */,
+			);
+			path = SNCappedQueueTests;
+			sourceTree = "<group>";
+		};
+		437A364519ED803700AEB4AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				437A364619ED803700AEB4AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		437A363719ED803700AEB4AB /* SNCappedQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437A364919ED803700AEB4AB /* Build configuration list for PBXNativeTarget "SNCappedQueue" */;
+			buildPhases = (
+				437A363419ED803700AEB4AB /* Sources */,
+				437A363519ED803700AEB4AB /* Frameworks */,
+				437A363619ED803700AEB4AB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNCappedQueue;
+			productName = SNCappedQueue;
+			productReference = 437A363819ED803700AEB4AB /* libSNCappedQueue.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		437A364219ED803700AEB4AB /* SNCappedQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437A364C19ED803700AEB4AB /* Build configuration list for PBXNativeTarget "SNCappedQueueTests" */;
+			buildPhases = (
+				437A363F19ED803700AEB4AB /* Sources */,
+				437A364019ED803700AEB4AB /* Frameworks */,
+				437A364119ED803700AEB4AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNCappedQueueTests;
+			productName = SNCappedQueueTests;
+			productReference = 437A364319ED803700AEB4AB /* SNCappedQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		437A363019ED803700AEB4AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Sorin Neacsu";
+				TargetAttributes = {
+					437A363719ED803700AEB4AB = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					437A364219ED803700AEB4AB = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 437A363319ED803700AEB4AB /* Build configuration list for PBXProject "SNCappedQueue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 437A362F19ED803700AEB4AB;
+			productRefGroup = 437A363919ED803700AEB4AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				437A363719ED803700AEB4AB /* SNCappedQueue */,
+				437A364219ED803700AEB4AB /* SNCappedQueueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		437A364119ED803700AEB4AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		437A363419ED803700AEB4AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437A363E19ED803700AEB4AB /* SNCappedQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437A363F19ED803700AEB4AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437A365119ED949800AEB4AB /* SNCappedQueue.m in Sources */,
+				437A365019ED8BE800AEB4AB /* SNCappedQueueTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		437A364719ED803700AEB4AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		437A364819ED803700AEB4AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		437A364A19ED803700AEB4AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		437A364B19ED803700AEB4AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		437A364D19ED803700AEB4AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SNCappedQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		437A364E19ED803700AEB4AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SNCappedQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		437A363319ED803700AEB4AB /* Build configuration list for PBXProject "SNCappedQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437A364719ED803700AEB4AB /* Debug */,
+				437A364819ED803700AEB4AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		437A364919ED803700AEB4AB /* Build configuration list for PBXNativeTarget "SNCappedQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437A364A19ED803700AEB4AB /* Debug */,
+				437A364B19ED803700AEB4AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		437A364C19ED803700AEB4AB /* Build configuration list for PBXNativeTarget "SNCappedQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437A364D19ED803700AEB4AB /* Debug */,
+				437A364E19ED803700AEB4AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 437A363019ED803700AEB4AB /* Project object */;
+}
