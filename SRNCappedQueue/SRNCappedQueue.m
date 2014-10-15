@@ -3,10 +3,10 @@
 // Copyright (c) 2014 Sorin Neacsu. All rights reserved.
 //
 
-#import "SNCappedQueue.h"
+#import "SRNCappedQueue.h"
 
 
-@implementation SNCappedQueue {
+@implementation SRNCappedQueue {
     NSMutableArray *queue;
     NSInteger size;
 }

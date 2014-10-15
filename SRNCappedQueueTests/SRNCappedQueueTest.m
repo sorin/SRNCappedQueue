@@ -1,21 +1,21 @@
 //
-//  SNCappedQueueTest.m
-//  SNCappedQueue
+//  SRNCappedQueueTest.m
+//  SRNCappedQueue
 //
 //  Created by Sorin on 10/14/14.
 //  Copyright (c) 2014 Sorin Neacsu. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "SNCappedQueue.h"
+#import "SRNCappedQueue.h"
 
 
-@interface SNCappedQueueTest : XCTestCase
+@interface SRNCappedQueueTest : XCTestCase
 
 @end
 
 
-@implementation SNCappedQueueTest
+@implementation SRNCappedQueueTest
 
 - (void)setUp {
     [super setUp];
@@ -28,35 +28,35 @@
 }
 
 - (void)testSizeNegative {
-    XCTAssertThrows([[SNCappedQueue alloc] initWithSize:-1]);
+    XCTAssertThrows([[SRNCappedQueue alloc] initWithSize:-1]);
 }
 
 - (void)testSizeZero {
-    XCTAssertThrows([[SNCappedQueue alloc] initWithSize:0]);
+    XCTAssertThrows([[SRNCappedQueue alloc] initWithSize:0]);
 }
 
 - (void)testCountSizeOneEnqueueOne {
-    SNCappedQueue *q = [[SNCappedQueue alloc] initWithSize:1];
+    SRNCappedQueue *q = [[SRNCappedQueue alloc] initWithSize:1];
     [q enqueue:@(1)];
     XCTAssertEqual(1, [q count]);
 }
 
 - (void)testCountSizeOneEnqueueTwo {
-    SNCappedQueue *q = [[SNCappedQueue alloc] initWithSize:1];
+    SRNCappedQueue *q = [[SRNCappedQueue alloc] initWithSize:1];
     [q enqueue:@(1)];
     [q enqueue:@(2)];
     XCTAssertEqual(1, [q count]);
 }
 
 - (void)testCountSizeTwoEnqueueTwo {
-    SNCappedQueue *q = [[SNCappedQueue alloc] initWithSize:2];
+    SRNCappedQueue *q = [[SRNCappedQueue alloc] initWithSize:2];
     [q enqueue:@(1)];
     [q enqueue:@(2)];
     XCTAssertEqual(2, [q count]);
 }
 
 - (void)testSizeOneEnqueueOneDequeueOne {
-    SNCappedQueue *q = [[SNCappedQueue alloc] initWithSize:1];
+    SRNCappedQueue *q = [[SRNCappedQueue alloc] initWithSize:1];
     NSNumber *enqueued = [NSNumber numberWithInt:1];
     [q enqueue:enqueued];
     NSNumber *dequeued = [q dequeue];
@@ -64,7 +64,7 @@
 }
 
 - (void)testSizeOneEnqueueTwoDequeueOne {
-    SNCappedQueue *q = [[SNCappedQueue alloc] initWithSize:1];
+    SRNCappedQueue *q = [[SRNCappedQueue alloc] initWithSize:1];
     NSNumber *enqueuedFirst = [NSNumber numberWithInt:1];
     [q enqueue:enqueuedFirst];
     NSNumber *enqueuedSecond = [NSNumber numberWithInt:2];
@@ -74,7 +74,7 @@
 }
 
 - (void)testSizeOneEnqueueTwoDequeueTwo {
-    SNCappedQueue *q = [[SNCappedQueue alloc] initWithSize:1];
+    SRNCappedQueue *q = [[SRNCappedQueue alloc] initWithSize:1];
     NSNumber *enqueuedFirst = [NSNumber numberWithInt:1];
     [q enqueue:enqueuedFirst];
     NSNumber *enqueuedSecond = [NSNumber numberWithInt:2];

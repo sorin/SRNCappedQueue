@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface SNCappedQueue : NSObject
+@interface SRNCappedQueue : NSObject
 
 - (instancetype)initWithSize:(NSInteger)aSize;
 

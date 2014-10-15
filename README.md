@@ -1,4 +1,4 @@
-SNCappedQueue
+SRNCappedQueue
 =============
 
 A capped Objective-C queue
