@@ -84,4 +84,29 @@
     XCTAssertNil(dequeuedSecond);
 }
 
+- (void)testSizeThreeEnqueueTwoDequeueWithCountTwo {
+    SRNCappedQueue *q = [[SRNCappedQueue alloc] initWithSize:3];
+    NSNumber *enqueuedFirst = [NSNumber numberWithInt:1];
+    [q enqueue:enqueuedFirst];
+    NSNumber *enqueuedSecond = [NSNumber numberWithInt:2];
+    [q enqueue:enqueuedSecond];
+    NSNumber *enqueuedThird = [NSNumber numberWithInt:3];
+    [q enqueue:enqueuedThird];
+    NSArray *dequeued = [q dequeueWithCount:2];
+    XCTAssertEqual(2, [dequeued count]);
+    XCTAssertEqual(enqueuedThird, dequeued[0]);
+    XCTAssertEqual(enqueuedSecond, dequeued[1]);
+    XCTAssertEqual(1, [q count]);
+}
+
+- (void)testSizeOneEnqueueOneDequeueWithCountTwo {
+    SRNCappedQueue *q = [[SRNCappedQueue alloc] initWithSize:1];
+    NSNumber *enqueuedFirst = [NSNumber numberWithInt:1];
+    [q enqueue:enqueuedFirst];
+    NSArray *dequeued = [q dequeueWithCount:2];
+    XCTAssertEqual(1, [dequeued count]);
+    XCTAssertEqual(enqueuedFirst, dequeued[0]);
+    XCTAssertEqual(0, [q count]);
+}
+
 @end

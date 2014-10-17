@@ -12,6 +12,8 @@
 
 - (id)dequeue;
 
+- (NSArray *)dequeueWithCount:(NSInteger)count;
+
 - (void)enqueue:(id)obj;
 
 - (NSInteger)count;

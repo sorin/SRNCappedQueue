@@ -40,6 +40,17 @@
     return returnObject;
 }
 
+- (NSArray *)dequeueWithCount:(NSInteger)count {
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+    for (int i = 0; i < count; ++i) {
+        id obj = [self dequeue];
+        if(obj) {
+            [result addObject:obj];
+        }
+    }
+    return result;
+}
+
 - (NSInteger)count {
     return [queue count];
 }
