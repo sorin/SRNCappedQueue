@@ -16,8 +16,10 @@
 
 - (void)enqueue:(id)obj;
 
-- (NSInteger)count;
+- (NSUInteger)count;
 
 - (NSArray *)queueCopy;
+
+- (NSArray *)newestObjects:(NSInteger)count;
 
 @end

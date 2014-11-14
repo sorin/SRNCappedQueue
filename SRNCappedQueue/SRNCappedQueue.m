@@ -51,12 +51,17 @@
     return result;
 }
 
-- (NSInteger)count {
+- (NSUInteger)count {
     return [queue count];
 }
 
 - (NSArray *)queueCopy {
     return [NSArray arrayWithArray:queue];
+}
+
+- (NSArray *)newestObjects:(NSInteger)count {
+    NSUInteger totalCount = [self count];
+    return [queue subarrayWithRange:(NSRange){totalCount-count, totalCount}];
 }
 
 
