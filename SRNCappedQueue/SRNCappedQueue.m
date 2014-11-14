@@ -40,6 +40,10 @@
     return returnObject;
 }
 
+- (NSArray *)dequeueAll {
+    return [self dequeueWithCount:[self count]];
+}
+
 - (NSArray *)dequeueWithCount:(NSInteger)count {
     NSMutableArray *result = [[NSMutableArray alloc] init];
     for (int i = 0; i < count; ++i) {
