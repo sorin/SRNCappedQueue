@@ -65,7 +65,8 @@
 
 - (NSArray *)newestObjects:(NSInteger)count {
     NSUInteger totalCount = [self count];
-    return [queue subarrayWithRange:(NSRange){totalCount-count, totalCount}];
+    NSUInteger start = (unsigned int)fmax(0, totalCount-count);
+    return [queue subarrayWithRange:(NSRange){start, totalCount}];
 }
 
 
