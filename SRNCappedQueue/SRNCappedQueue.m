@@ -55,4 +55,9 @@
     return [queue count];
 }
 
+- (NSArray *)queueCopy {
+    return [NSArray arrayWithArray:queue];
+}
+
+
 @end

@@ -18,4 +18,6 @@
 
 - (NSInteger)count;
 
+- (NSArray *)queueCopy;
+
 @end
